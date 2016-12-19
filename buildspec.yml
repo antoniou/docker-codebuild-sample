@@ -5,7 +5,7 @@ phases:
     build:
         commands:
             - docker build -t docker-codebuild-sample .
-    post-build:
+    post_build:
         commands:
             - eval $(aws ecr get-login --region eu-west-1)
             - docker tag docker-codebuild-sample:latest 329485089133.dkr.ecr.eu-west-1.amazonaws.com/docker-codebuild-sample:latest
