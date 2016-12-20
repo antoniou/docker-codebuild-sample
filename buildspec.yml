@@ -12,4 +12,4 @@ phases:
             - docker push 329485089133.dkr.ecr.eu-west-1.amazonaws.com/docker-codebuild-sample:latest
 artifacts:
     files:
-        - '**/*'
+        - 'Dockerrun.aws.json'
